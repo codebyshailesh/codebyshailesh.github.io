@@ -1,20 +1,30 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar"; // Assume you have a Navbar
 import Home from "./pages/Home";
+import About from "./pages/About"; // Create these pages
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <>
-      {/* //routing */}
-      <BrowserRouter>
+    <BrowserRouter>
+      {/* Navbar stays here so it shows on every page */}
+      <Navbar />
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Routes>
-          {/* for home page "/" means homepage */}
           <Route path="/" element={<Home />} />
-          {/* all the paths that are not defined are not-found */}
+          <Route path="/about" element={<About />} />
+          <Route path="/project" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+
+          {/* Catch-all for 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
-    </>
+      </main>
+
+      {/* You can also put a Footer here */}
+    </BrowserRouter>
   );
 }
 
