@@ -45,7 +45,7 @@ function Projects() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto ">
       {/* Heading */}
       <h1 className="text-4xl font-bold mt-3 mb-2 text-foreground animate-slide-in-bottom [animation-delay:200ms]">
         Projects

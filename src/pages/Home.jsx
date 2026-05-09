@@ -3,9 +3,11 @@ import { FaInstagram, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-  const [selectedTheme, setSelectedTheme] = useState(
-    document.documentElement.classList.contains("dark") ? "dark" : "light",
-  );
+  const [selectedTheme, setSelectedTheme] = useState(() => {
+    // Check the class first, fall back to localStorage
+    if (document.documentElement.classList.contains("dark")) return "dark";
+    return localStorage.getItem("theme") ?? "light";
+  });
 
   useEffect(() => {
     const observer = new MutationObserver(() => {
@@ -22,8 +24,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="max-h-screen relative">
-      <div className="h-150 w-160 fixed top-0 right-0 -z-10 animate-slide-in-right [animation-delay:200ms]">
+    <div className="max-h-screen overflow-hidden relative">
+      <div className=" h-150 w-160 fixed top-0 right-0 -z-10 animate-slide-in-right [animation-delay:200ms]">
         <img
           src={selectedTheme === "light" ? "li-bg.png" : "dr-bg.png"}
           alt=""
@@ -31,8 +33,8 @@ const Home = () => {
       </div>
 
       <main className="grid grid-cols-2 gap-20">
-        <div className="flex flex-col items-start py-25 animate-slide-in-left [animation-delay:200ms]">
-          <h1 className="text-6xl text-primary dark:bg-primary font-semibold">
+        <div className="flex flex-col items-start py-25  animate-slide-in-left [animation-delay:200ms]">
+          <h1 className="text-6xl text-primary dark:text-primary font-semibold">
             Hello, my name
           </h1>
           <h1 className="text-6xl text-foreground dark:text-foreground font-semibold font-mono mt-2">
@@ -45,7 +47,7 @@ const Home = () => {
             work below!
           </p>
 
-          <div className="mt-10 flex items-center gap-5 animate-slide-in-bottom [animation-delay:200ms]">
+          <div className="mt-10 flex items-center gap-5 ">
             <button className="rounded px-6 py-2 text-xl shadow border-2 border-primary bg-primary dark:bg-primary text-primary-foreground dark:text-primary-foreground hover:-translate-y-0.5 transition-all duration-200">
               <Link to="/contact">Contact</Link>
             </button>

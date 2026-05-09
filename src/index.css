@@ -17,15 +17,15 @@
 
   .dark {
     /* Dark Mode — Deep Spruce base */
-    --background: #1a2e28; /* Deep Spruce */
-    --foreground: #ece7e2; /* Linen — for readable text */
-    --primary: #6b9e8a; /* Spruce light — pops on dark bg */
-    --primary-foreground: #1a2e28; /* Deep Spruce — text on primary buttons */
-    --secondary: #4a7766; /* Spruce */
-    --accent: #d4a97a; /* Warm sand light */
-    --muted: #79a295; /* Muted teal */
-    --border: #2d4a40; /* Dark spruce border */
-    --card: #223c35; /* Slightly lighter than bg */
+    --background: #fdf6ee; /* Warm Ivory */
+    --foreground: #2b1a08; /* Deep Amber Brown — for readable text */
+    --primary: #ee8e46; /* Amber */
+    --primary-foreground: #fdf6ee; /* Warm Ivory — text on primary buttons */
+    --secondary: #e8a96b; /* Amber Light */
+    --accent: #6e9980; /* Sage — complements warm amber */
+    --muted: #7a5c40; /* Muted Warm Brown */
+    --border: #e0cdb8; /* Warm Tan — slightly darker ivory */
+    --card: #fff9f2; /* Soft Ivory — slightly lighter than bg */
   }
 
   body {
