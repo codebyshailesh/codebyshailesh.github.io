@@ -35,9 +35,9 @@ const ThemeToggle = () => {
   return (
     <button onClick={handleThemeToggle}>
       {isDark ? (
-        <Sun className="h-7 w-7 text-yellow-900 bg-white p-1 rounded shadow hover:bg-slate-300 " />
+        <Sun className="h-7 w-7 text-background dark:text-background p-1 bg-accent rounded" />
       ) : (
-        <Moon className="h-6 w-6 text-blue-900" />
+        <Moon className="h-7 w-7 text-background dark:text-background p-1 bg-accent  rounded" />
       )}
     </button>
   );

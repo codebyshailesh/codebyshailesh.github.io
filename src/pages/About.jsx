@@ -1,4 +1,27 @@
+import { useEffect, useState } from "react";
+
 const About = () => {
+<<<<<<< Updated upstream
+=======
+  const [selectedTheme, setSelectedTheme] = useState(
+    document.documentElement.classList.contains("dark") ? "dark" : "light",
+  );
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      const isDark = document.documentElement.classList.contains("dark");
+      setSelectedTheme(isDark ? "dark" : "light");
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+>>>>>>> Stashed changes
   return (
     <div className="flex justify-between p-10 gap-50">
       <div className="flex items-start flex-col">
@@ -18,8 +41,18 @@ const About = () => {
           contact
         </button>
       </div>
+<<<<<<< Updated upstream
       <div className="animate-slide-in-right [animation-delay:200ms]">
         <div className="w-70 h-70 bg-amber-700 rounded-full"></div>
+=======
+
+      <div className="animate-slide-in-right [animation-delay:200ms] shrink-0">
+        <img
+          src={`${selectedTheme === "light" ? "li-profile.png" : "dr-profile.png"}`}
+          alt="Shailesh"
+          className="w-96 rounded-2xl object-cover"
+        />
+>>>>>>> Stashed changes
       </div>
     </div>
   );

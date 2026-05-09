@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
+<<<<<<< Updated upstream
+=======
+  const { pathname } = useLocation();
+>>>>>>> Stashed changes
   return (
     <div className="max-w-7xl mx-auto flex justify-between items-center  py-5">
       <h1 className="text-2xl font-bold ml-10">Shailesh</h1>

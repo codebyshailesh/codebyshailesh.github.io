@@ -77,12 +77,25 @@
   }
 
   .dark {
+<<<<<<< Updated upstream
     --color-bg: 18, 22, 25; /* Deep Navy/Black */
     --color-text: 230, 235, 240; /* Soft White */
     --color-border: 45, 55, 65; /* Muted Blue-Grey */
     --color-primary: 78, 206, 171; /* Brighter Mint for Dark */
     --color-primary-foreground: 18, 22, 25; /* Contrast Dark */
     --color-card: 28, 34, 40; /* Slightly Lighter than BG */
+=======
+    /* Dark Mode — Deep Spruce base */
+    --background: #f5ece0; /* Warm cream */
+    --foreground: #2b1a08; /* Deep amber — for readable text */
+    --primary: #ee8e46; /* Amber — your base color */
+    --primary-foreground: #f5ece0; /* Warm cream — text on primary buttons */
+    --secondary: #e8a96b; /* Amber light */
+    --accent: #6e9980; /* Sage — complements warm amber */
+    --muted: #7a5c40; /* Muted warm brown */
+    --border: #e0d0bc; /* Warm tan — slightly darker cream */
+    --card: #faf5ee; /* Soft cream — slightly lighter than bg */
+>>>>>>> Stashed changes
   }
 
   body {
@@ -221,6 +234,12 @@
     opacity: 0;
     animation: slideInBottom 0.8s ease-in-out forwards;
   }
+<<<<<<< Updated upstream
+=======
+  .animate-soft-float {
+    animation: softFloat 2s ease-in-out infinite;
+  }
+>>>>>>> Stashed changes
 }
 
 @keyframes slideInRight {
@@ -260,7 +279,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 
