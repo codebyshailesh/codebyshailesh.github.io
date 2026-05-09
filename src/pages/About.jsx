@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 const About = () => {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   const [selectedTheme, setSelectedTheme] = useState(
@@ -22,25 +23,39 @@ const About = () => {
   }, []);
 
 >>>>>>> Stashed changes
+=======
+  const storedTheme = localStorage.getItem("theme");
+  console.log(storedTheme);
+
+>>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
   return (
-    <div className="flex justify-between p-10 gap-50">
+    <div className="flex justify-between items-center my-10 p-10 gap-20 rounded-2xl">
       <div className="flex items-start flex-col">
-        <h1 className="text-3xl font-bold mt-5 animate-slide-in-left [animation-delay:200ms]">
+        <span className="text-lg font-bold  text-accent tracking-widest uppercase animate-slide-in-left [animation-delay:100ms]">
+          Who I am
+        </span>
+
+        <h1 className="text-4xl font-bold mt-3 text-foreground dark:text-foreground animate-slide-in-left [animation-delay:200ms]">
           About me
         </h1>
-        <p className="text-start my-5 animate-slide-in-left [animation-delay:200ms]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam unde
-          est suscipit blanditiis iusto! Quam beatae voluptas dolorum ipsam
-          ratione, quisquam delectus, praesentium, similique neque explicabo sit
-          in suscipit sint! Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Minus, iste suscipit officia ex deleniti illum, iure
-          consequuntur maiores, veritatis quasi magnam nesciunt repellat
-          inventore adipisci eius. Voluptas est repudiandae nostrum.
+
+        <div className="w-12 h-1 bg-primary rounded mt-3 mb-5 animate-slide-in-left [animation-delay:300ms]" />
+
+        <p className="text-muted dark:text-muted text-start leading-relaxed animate-slide-in-left [animation-delay:400ms]">
+          Hi, I'm Shailesh — a passionate web developer who loves turning ideas
+          into clean, functional, and beautiful digital experiences. I
+          specialize in building modern web applications with a strong focus on
+          performance, accessibility, and intuitive design. Whether it's
+          crafting a pixel-perfect UI or wiring up a solid backend, I bring care
+          and precision to every line of code. I'm always exploring new tools,
+          sharpening my skills, and looking for the next problem worth solving.
         </p>
-        <button className="my-5 rounded  bg-[rgb(253,196,53)] px-3 py-1 text-lg shadow animate-slide-in-bottom [animation-delay:200ms]">
-          contact
+
+        <button className="mt-8 px-6 py-2.5 rounded-md text-lg font-medium bg-primary text-primary-foreground hover:opacity-90 active:scale-95 transition-all duration-200 shadow-sm animate-slide-in-bottom [animation-delay:500ms]">
+          Contact me
         </button>
       </div>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       <div className="animate-slide-in-right [animation-delay:200ms]">
         <div className="w-70 h-70 bg-amber-700 rounded-full"></div>
@@ -53,6 +68,15 @@ const About = () => {
           className="w-96 rounded-2xl object-cover"
         />
 >>>>>>> Stashed changes
+=======
+
+      <div className="animate-slide-in-right [animation-delay:200ms] shrink-0">
+        <img
+          src={`${storedTheme === "light" ? "li-img.png" : "dr-img.png"}`}
+          alt="Shailesh"
+          className="w-96 rounded-2xl object-cover"
+        />
+>>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
       </div>
     </div>
   );

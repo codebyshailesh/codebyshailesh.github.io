@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       {/* Navbar stays here so it shows on every page */}
       <Navbar />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

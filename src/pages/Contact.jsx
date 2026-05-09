@@ -1,5 +1,6 @@
 const Contact = () => {
   return (
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     <div className="max-w-2xl mx-auto py-20 px-6 text-center">
       <h1 className="text-5xl font-serif font-bold mb-6">Let's Connect</h1>
@@ -29,6 +30,10 @@ const Contact = () => {
 =======
     <div className="max-w-4xl my-8 mx-auto grid grid-cols-2  rounded-2xl border-primary ">
       <div className="grid  border-2 dark:border-primary place-content-center bg-primary rounded-bl-2xl rounded-tl-2xl px-8 transition-colors duration-500 animate-slide-in-left [animation-delay:500ms] ">
+=======
+    <div className="max-w-4xl my-8 mx-auto grid grid-cols-2  rounded-2xl border-primary ">
+      <div className="grid place-content-center bg-primary rounded-bl-2xl rounded-tl-2xl px-8 transition-colors duration-500 animate-slide-in-left [animation-delay:500ms] ">
+>>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
         <h1 className="text-5xl font-bold mt-3 mb-4 text-background dark:text-background  ">
           Let's{" "}
           <span className="text-foreground dark:text-foreground">Connect</span>
@@ -80,7 +85,10 @@ const Contact = () => {
           </button>
         </form>
       </div>
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
     </div>
   );
 };

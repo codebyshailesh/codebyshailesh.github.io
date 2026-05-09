@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const Home = () => {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   return (
     <div className="max-h-screen relative">
@@ -35,10 +36,25 @@ const Home = () => {
           alt=""
         />
 >>>>>>> Stashed changes
+=======
+  const storedTheme = localStorage.getItem("theme");
+ 
+  return (
+    <div className="max-h-screen  relative">
+      <div className="h-150 w-160 fixed top-0 right-0 -z-10 animate-slide-in-right [animation-delay:200ms] ">
+        <img
+          src={`${storedTheme === "dark" ? "li-bg.png" : "dr-bg.png"}`}
+          alt=""
+        />
+>>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
       </div>
+      {/* <div className="h-150 w-160 fixed top-0 right-0 -z-10">
+        <img src="image.png" alt="" />
+      </div> */}
 
       <main className="grid grid-cols-2 gap-20">
         <div className="flex flex-col items-start py-25 animate-slide-in-left [animation-delay:200ms]">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
           <h1 className="text-6xl font-semibold ">Hello,my name</h1>
           <h1 className="text-6xl font-semibold">Shailesh yadav</h1>
@@ -47,11 +63,25 @@ const Home = () => {
             labore, architecto totam repellendus quos aperiam veniam corporis,
             maiores, nihil beatae et! Modi, quis nesciunt! Aut a rem animi
             fugiat unde.
+=======
+          <h1 className="text-6xl text-primary dark:bg-primary font-semibold ">
+            Hello,my name
+          </h1>
+          <h1 className="text-6xl text-foreground dark:text-foreground font-semibold font-mono mt-2">
+            Shailesh yadav
+          </h1>
+          <p className="text-start mt-8 text-foreground ">
+            I'm a self-taught web developer on a journey to build the modern
+            web. From my first "Hello World" to complex full-stack projects, I
+            love the process of learning something new every day. Check out my
+            work below!
+>>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
           </p>
           <div className="mt-10 flex items-center gap-5 animate-slide-in-bottom [animation-delay:200ms] ">
-            <button className="rounded  bg-[rgb(253,196,53)] px-3 py-1 text-lg shadow ">
+            <button className="rounded text-pr px-6 py-2 text-xl shadow border-2 border-primary  bg-primary dark:bg-primary text-primary-foreground dark:text-primary-foreground">
               contact
             </button>
+<<<<<<< HEAD
             <button className="px-3 py-1 text-lg border-2 border-slate-900 rounded hover:border-2 hover:border-amber-800 hover:shadow hover:text-yellow-800">
               Linkden
 =======
@@ -71,6 +101,10 @@ const Home = () => {
             <button className="rounded text-pr px-6 py-2 text-xl shadow border-2 border-primary  bg-primary dark:bg-primary text-primary-foreground dark:text-primary-foreground hover:-translate-y-0.5 transition-all duration-200 ">
               <Link to="/contact">contact</Link>
 >>>>>>> Stashed changes
+=======
+            <button className="rounded text-pr px-6 py-2 text-xl shadow border-2 border-primary text-primary">
+              connect
+>>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
             </button>
             <div className="flex  justify-center items-center  gap-5  px-6 py-2 rounded   ">
               <div className="animate-slide-in-bottom [animation-delay:600ms]">
@@ -91,9 +125,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div class="grid place-content-center">
-          <div className="h-100 w-100 animate-slide-in-right [animation-delay:200ms] rounded-full bg-amber-700"></div>
-        </div>
+        <div class="grid place-content-center"></div>
       </main>
     </div>
   );
