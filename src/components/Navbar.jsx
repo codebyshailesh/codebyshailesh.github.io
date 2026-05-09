@@ -2,16 +2,9 @@ import { Link, useLocation } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-  const { pathname } = useLocation();
->>>>>>> Stashed changes
-=======
   const { pathname } = useLocation();
   const isHome = pathname === "/";
 
->>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
   return (
     <div className="w-full transition-colors duration-300 bg-transparent">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-7">

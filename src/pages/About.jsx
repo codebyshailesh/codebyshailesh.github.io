@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 
 const About = () => {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
   const [selectedTheme, setSelectedTheme] = useState(
     document.documentElement.classList.contains("dark") ? "dark" : "light",
   );
@@ -22,16 +19,10 @@ const About = () => {
     return () => observer.disconnect();
   }, []);
 
->>>>>>> Stashed changes
-=======
-  const storedTheme = localStorage.getItem("theme");
-  console.log(storedTheme);
-
->>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
   return (
     <div className="flex justify-between items-center my-10 p-10 gap-20 rounded-2xl">
       <div className="flex items-start flex-col">
-        <span className="text-lg font-bold  text-accent tracking-widest uppercase animate-slide-in-left [animation-delay:100ms]">
+        <span className="text-lg font-bold text-accent tracking-widest uppercase animate-slide-in-left [animation-delay:100ms]">
           Who I am
         </span>
 
@@ -55,28 +46,13 @@ const About = () => {
           Contact me
         </button>
       </div>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-      <div className="animate-slide-in-right [animation-delay:200ms]">
-        <div className="w-70 h-70 bg-amber-700 rounded-full"></div>
-=======
 
       <div className="animate-slide-in-right [animation-delay:200ms] shrink-0">
         <img
-          src={`${selectedTheme === "light" ? "li-profile.png" : "dr-profile.png"}`}
+          src={selectedTheme === "light" ? "li-profile.png" : "dr-profile.png"}
           alt="Shailesh"
           className="w-96 rounded-2xl object-cover"
         />
->>>>>>> Stashed changes
-=======
-
-      <div className="animate-slide-in-right [animation-delay:200ms] shrink-0">
-        <img
-          src={`${storedTheme === "light" ? "li-img.png" : "dr-img.png"}`}
-          alt="Shailesh"
-          className="w-96 rounded-2xl object-cover"
-        />
->>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
       </div>
     </div>
   );

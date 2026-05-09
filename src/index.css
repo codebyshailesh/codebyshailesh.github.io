@@ -16,39 +16,16 @@
   }
 
   .dark {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    --color-bg: 18, 22, 25; /* Deep Navy/Black */
-    --color-text: 230, 235, 240; /* Soft White */
-    --color-border: 45, 55, 65; /* Muted Blue-Grey */
-    --color-primary: 78, 206, 171; /* Brighter Mint for Dark */
-    --color-primary-foreground: 18, 22, 25; /* Contrast Dark */
-    --color-card: 28, 34, 40; /* Slightly Lighter than BG */
-=======
-    /* Dark Mode — Deep Spruce base */
-    --background: #f5ece0; /* Warm cream */
-    --foreground: #2b1a08; /* Deep amber — for readable text */
-    --primary: #ee8e46; /* Amber — your base color */
-    --primary-foreground: #f5ece0; /* Warm cream — text on primary buttons */
-    --secondary: #e8a96b; /* Amber light */
-    --accent: #6e9980; /* Sage — complements warm amber */
-    --muted: #7a5c40; /* Muted warm brown */
-    --border: #e0d0bc; /* Warm tan — slightly darker cream */
-    --card: #faf5ee; /* Soft cream — slightly lighter than bg */
->>>>>>> Stashed changes
-=======
     /* Dark Mode — Deep Spruce base */
     --background: #1a2e28; /* Deep Spruce */
     --foreground: #ece7e2; /* Linen — for readable text */
-    --primary: #
-; /* Spruce light — pops on dark bg */
+    --primary: #6b9e8a; /* Spruce light — pops on dark bg */
     --primary-foreground: #1a2e28; /* Deep Spruce — text on primary buttons */
     --secondary: #4a7766; /* Spruce */
     --accent: #d4a97a; /* Warm sand light */
     --muted: #79a295; /* Muted teal */
     --border: #2d4a40; /* Dark spruce border */
     --card: #223c35; /* Slightly lighter than bg */
->>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
   }
 
   body {
@@ -78,18 +55,9 @@
     opacity: 0;
     animation: slideInBottom 0.8s ease-in-out forwards;
   }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-  .animate-soft-float {
-    animation: softFloat 2s ease-in-out infinite;
-  }
->>>>>>> Stashed changes
-=======
   .animate-soft-float {
     animation: softFloat 3s ease-in-out infinite;
   }
->>>>>>> fa843c766ce6f97a81ae5268f4a76cc7a2783c7e
 }
 
 /* 4. Keyframes */
