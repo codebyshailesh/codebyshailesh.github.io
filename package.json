@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://codebyshailesh.github.io",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp .nojekyll dist/.nojekyll",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build"
