@@ -1,11 +1,18 @@
 function Projects() {
   const projects = [
-   
     {
-      title: "E-Commerce App",
-      description:
-        "Full-stack shopping platform with cart, authentication, and payments.",
-      tech: ["React", "Node.js", "MongoDB"],
+      title: "Chat App",
+      description: "An app for chatting ,secure , better ui design",
+      tech: ["NextJS", "subabase"],
+      img: "chatapp.png",
+      link: "https://thechatly.vercel.app/",
+    },
+    {
+      title: "QR Generator",
+      description: "An app for chatting ,secure , better ui design",
+      tech: ["NextJS", "App Router","qrgenerator"],
+      img: "qrapp.png",
+      link: "https://madeqr.vercel.app/",
     },
   ];
 
@@ -27,7 +34,13 @@ function Projects() {
             style={{ animationDelay: `${400 + index * 100}ms` }}
           >
             {/* Left Banner */}
-            <div className=" w-[45%] bg-primary dark:bg-primary/80 transition-colors duration-500"></div>
+            <div className=" w-[45%] bg-primary dark:bg-primary/80 transition-colors duration-500">
+              <img
+                src={project.img}
+                alt="chat app image"
+                className=" h-full w-full "
+              />
+            </div>
 
             {/* Content */}
             <div className=" w-[55%] p-6 flex flex-col gap-4">
@@ -57,7 +70,7 @@ function Projects() {
               {/* Button */}
               <div className="mt-auto">
                 <a
-                  href="#"
+                  href={project.link}
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-lg font-medium hover:opacity-90 active:scale-95 transition-all duration-200"
                 >
                   View Project →
