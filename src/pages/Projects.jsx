@@ -1,41 +1,6 @@
 function Projects() {
   const projects = [
-    {
-      title: "Portfolio Website",
-      description:
-        "A modern developer portfolio built using React, Tailwind CSS, and Framer Motion.",
-      tech: ["React", "Tailwind", "Framer Motion"],
-    },
-    {
-      title: "E-Commerce App",
-      description:
-        "Full-stack shopping platform with cart, authentication, and payments.",
-      tech: ["React", "Node.js", "MongoDB"],
-    },
-    {
-      title: "E-Commerce App",
-      description:
-        "Full-stack shopping platform with cart, authentication, and payments.",
-      tech: ["React", "Node.js", "MongoDB"],
-    },
-    {
-      title: "E-Commerce App",
-      description:
-        "Full-stack shopping platform with cart, authentication, and payments.",
-      tech: ["React", "Node.js", "MongoDB"],
-    },
-    {
-      title: "E-Commerce App",
-      description:
-        "Full-stack shopping platform with cart, authentication, and payments.",
-      tech: ["React", "Node.js", "MongoDB"],
-    },
-    {
-      title: "E-Commerce App",
-      description:
-        "Full-stack shopping platform with cart, authentication, and payments.",
-      tech: ["React", "Node.js", "MongoDB"],
-    },
+   
     {
       title: "E-Commerce App",
       description:
